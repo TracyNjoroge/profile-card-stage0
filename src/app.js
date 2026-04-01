@@ -27,13 +27,4 @@ avatarImgEl.addEventListener("click", () => {
   fileInputEl.click();
 })
 
-
-const updateMilliseconds = () => {
-    const currentTimeMillis = Date.now();
-    timeEl.textContent = currentTimeMillis;
-
-    requestAnimationFrame(updateMilliseconds);
-};
-
 setAvatar("/assets/images/avatar.jpg");
-updateMilliseconds();
